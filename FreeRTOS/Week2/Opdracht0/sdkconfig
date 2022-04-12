@@ -1,0 +1,643 @@
+#
+# Automatically generated file. DO NOT EDIT.
+# Espressif IoT Development Framework (ESP-IDF) Project Configuration
+#
+CONFIG_IDF_CMAKE=y
+CONFIG_IDF_TARGET="esp32"
+CONFIG_IDF_TARGET_ESP32=y
+CONFIG_IDF_FIRMWARE_CHIP_ID=0x0000
+
+#
+# SDK tool configuration
+#
+CONFIG_SDK_TOOLPREFIX="xtensa-esp32-elf-"
+# CONFIG_SDK_TOOLCHAIN_SUPPORTS_TIME_WIDE_64_BITS is not set
+# end of SDK tool configuration
+
+#
+# Build type
+#
+CONFIG_APP_BUILD_TYPE_APP_2NDBOOT=y
+# CONFIG_APP_BUILD_TYPE_ELF_RAM is not set
+CONFIG_APP_BUILD_GENERATE_BINARIES=y
+CONFIG_APP_BUILD_BOOTLOADER=y
+CONFIG_APP_BUILD_USE_FLASH_SECTIONS=y
+# end of Build type
+
+#
+# Application manager
+#
+CONFIG_APP_COMPILE_TIME_DATE=y
+# CONFIG_APP_EXCLUDE_PROJECT_VER_VAR is not set
+# CONFIG_APP_EXCLUDE_PROJECT_NAME_VAR is not set
+# CONFIG_APP_PROJECT_VER_FROM_CONFIG is not set
+CONFIG_APP_RETRIEVE_LEN_ELF_SHA=16
+# end of Application manager
+
+#
+# Bootloader config
+#
+CONFIG_BOOTLOADER_COMPILER_OPTIMIZATION_SIZE=y
+# CONFIG_BOOTLOADER_COMPILER_OPTIMIZATION_DEBUG is not set
+# CONFIG_BOOTLOADER_COMPILER_OPTIMIZATION_PERF is not set
+# CONFIG_BOOTLOADER_COMPILER_OPTIMIZATION_NONE is not set
+# CONFIG_BOOTLOADER_LOG_LEVEL_NONE is not set
+# CONFIG_BOOTLOADER_LOG_LEVEL_ERROR is not set
+# CONFIG_BOOTLOADER_LOG_LEVEL_WARN is not set
+CONFIG_BOOTLOADER_LOG_LEVEL_INFO=y
+# CONFIG_BOOTLOADER_LOG_LEVEL_DEBUG is not set
+# CONFIG_BOOTLOADER_LOG_LEVEL_VERBOSE is not set
+CONFIG_BOOTLOADER_LOG_LEVEL=3
+# CONFIG_BOOTLOADER_VDDSDIO_BOOST_1_8V is not set
+CONFIG_BOOTLOADER_VDDSDIO_BOOST_1_9V=y
+# CONFIG_BOOTLOADER_FACTORY_RESET is not set
+# CONFIG_BOOTLOADER_APP_TEST is not set
+CONFIG_BOOTLOADER_WDT_ENABLE=y
+# CONFIG_BOOTLOADER_WDT_DISABLE_IN_USER_CODE is not set
+CONFIG_BOOTLOADER_WDT_TIME_MS=9000
+# CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE is not set
+# CONFIG_BOOTLOADER_SKIP_VALIDATE_IN_DEEP_SLEEP is not set
+CONFIG_BOOTLOADER_RESERVE_RTC_SIZE=0
+# CONFIG_BOOTLOADER_CUSTOM_RESERVE_RTC is not set
+# end of Bootloader config
+
+#
+# Security features
+#
+# CONFIG_SECURE_SIGNED_APPS_NO_SECURE_BOOT is not set
+# CONFIG_SECURE_BOOT is not set
+# CONFIG_SECURE_FLASH_ENC_ENABLED is not set
+# end of Security features
+
+#
+# Serial flasher config
+#
+CONFIG_ESPTOOLPY_BAUD_OTHER_VAL=115200
+CONFIG_ESPTOOLPY_WITH_STUB=y
+# CONFIG_ESPTOOLPY_FLASHMODE_QIO is not set
+# CONFIG_ESPTOOLPY_FLASHMODE_QOUT is not set
+CONFIG_ESPTOOLPY_FLASHMODE_DIO=y
+# CONFIG_ESPTOOLPY_FLASHMODE_DOUT is not set
+CONFIG_ESPTOOLPY_FLASHMODE="dio"
+# CONFIG_ESPTOOLPY_FLASHFREQ_80M is not set
+CONFIG_ESPTOOLPY_FLASHFREQ_40M=y
+# CONFIG_ESPTOOLPY_FLASHFREQ_26M is not set
+# CONFIG_ESPTOOLPY_FLASHFREQ_20M is not set
+CONFIG_ESPTOOLPY_FLASHFREQ="40m"
+# CONFIG_ESPTOOLPY_FLASHSIZE_1MB is not set
+CONFIG_ESPTOOLPY_FLASHSIZE_2MB=y
+# CONFIG_ESPTOOLPY_FLASHSIZE_4MB is not set
+# CONFIG_ESPTOOLPY_FLASHSIZE_8MB is not set
+# CONFIG_ESPTOOLPY_FLASHSIZE_16MB is not set
+CONFIG_ESPTOOLPY_FLASHSIZE="2MB"
+CONFIG_ESPTOOLPY_FLASHSIZE_DETECT=y
+CONFIG_ESPTOOLPY_BEFORE_RESET=y
+# CONFIG_ESPTOOLPY_BEFORE_NORESET is not set
+CONFIG_ESPTOOLPY_BEFORE="default_reset"
+CONFIG_ESPTOOLPY_AFTER_RESET=y
+# CONFIG_ESPTOOLPY_AFTER_NORESET is not set
+CONFIG_ESPTOOLPY_AFTER="hard_reset"
+# CONFIG_ESPTOOLPY_MONITOR_BAUD_9600B is not set
+# CONFIG_ESPTOOLPY_MONITOR_BAUD_57600B is not set
+CONFIG_ESPTOOLPY_MONITOR_BAUD_115200B=y
+# CONFIG_ESPTOOLPY_MONITOR_BAUD_230400B is not set
+# CONFIG_ESPTOOLPY_MONITOR_BAUD_921600B is not set
+# CONFIG_ESPTOOLPY_MONITOR_BAUD_2MB is not set
+# CONFIG_ESPTOOLPY_MONITOR_BAUD_OTHER is not set
+CONFIG_ESPTOOLPY_MONITOR_BAUD_OTHER_VAL=115200
+CONFIG_ESPTOOLPY_MONITOR_BAUD=115200
+# end of Serial flasher config
+
+#
+# Partition Table
+#
+CONFIG_PARTITION_TABLE_SINGLE_APP=y
+# CONFIG_PARTITION_TABLE_TWO_OTA is not set
+# CONFIG_PARTITION_TABLE_CUSTOM is not set
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+CONFIG_PARTITION_TABLE_FILENAME="partitions_singleapp.csv"
+CONFIG_PARTITION_TABLE_OFFSET=0x8000
+CONFIG_PARTITION_TABLE_MD5=y
+# end of Partition Table
+
+#
+# Compiler options
+#
+CONFIG_COMPILER_OPTIMIZATION_DEFAULT=y
+# CONFIG_COMPILER_OPTIMIZATION_SIZE is not set
+# CONFIG_COMPILER_OPTIMIZATION_PERF is not set
+# CONFIG_COMPILER_OPTIMIZATION_NONE is not set
+CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_ENABLE=y
+# CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_SILENT is not set
+# CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_DISABLE is not set
+# CONFIG_COMPILER_CXX_EXCEPTIONS is not set
+# CONFIG_COMPILER_CXX_RTTI is not set
+CONFIG_COMPILER_STACK_CHECK_MODE_NONE=y
+# CONFIG_COMPILER_STACK_CHECK_MODE_NORM is not set
+# CONFIG_COMPILER_STACK_CHECK_MODE_STRONG is not set
+# CONFIG_COMPILER_STACK_CHECK_MODE_ALL is not set
+# CONFIG_COMPILER_WARN_WRITE_STRINGS is not set
+# CONFIG_COMPILER_DISABLE_GCC8_WARNINGS is not set
+# end of Compiler options
+
+#
+# Component config
+#
+
+#
+# Application Level Tracing
+#
+# CONFIG_APPTRACE_DEST_TRAX is not set
+CONFIG_APPTRACE_DEST_NONE=y
+CONFIG_APPTRACE_LOCK_ENABLE=y
+# end of Application Level Tracing
+
+#
+# Bluetooth
+#
+# CONFIG_BT_ENABLED is not set
+CONFIG_BTDM_CTRL_BR_EDR_SCO_DATA_PATH_EFF=0
+CONFIG_BTDM_CTRL_PCM_ROLE_EFF=0
+CONFIG_BTDM_CTRL_PCM_POLAR_EFF=0
+CONFIG_BTDM_CTRL_BLE_MAX_CONN_EFF=0
+CONFIG_BTDM_CTRL_BR_EDR_MAX_ACL_CONN_EFF=0
+CONFIG_BTDM_CTRL_BR_EDR_MAX_SYNC_CONN_EFF=0
+CONFIG_BTDM_CTRL_PINNED_TO_CORE=0
+CONFIG_BTDM_BLE_SLEEP_CLOCK_ACCURACY_INDEX_EFF=1
+CONFIG_BT_RESERVE_DRAM=0
+# end of Bluetooth
+
+#
+# CoAP Configuration
+#
+CONFIG_COAP_MBEDTLS_PSK=y
+# CONFIG_COAP_MBEDTLS_PKI is not set
+# CONFIG_COAP_MBEDTLS_DEBUG is not set
+CONFIG_COAP_LOG_DEFAULT_LEVEL=0
+# end of CoAP Configuration
+
+#
+# Driver configurations
+#
+
+#
+# ADC configuration
+#
+# CONFIG_ADC_FORCE_XPD_FSM is not set
+CONFIG_ADC_DISABLE_DAC=y
+# end of ADC configuration
+
+#
+# SPI configuration
+#
+# CONFIG_SPI_MASTER_IN_IRAM is not set
+CONFIG_SPI_MASTER_ISR_IN_IRAM=y
+# CONFIG_SPI_SLAVE_IN_IRAM is not set
+CONFIG_SPI_SLAVE_ISR_IN_IRAM=y
+# end of SPI configuration
+
+#
+# UART configuration
+#
+# CONFIG_UART_ISR_IN_IRAM is not set
+# end of UART configuration
+
+#
+# RTCIO configuration
+#
+# CONFIG_RTCIO_SUPPORT_RTC_GPIO_DESC is not set
+# end of RTCIO configuration
+# end of Driver configurations
+
+#
+# eFuse Bit Manager
+#
+# CONFIG_EFUSE_CUSTOM_TABLE is not set
+# CONFIG_EFUSE_VIRTUAL is not set
+# CONFIG_EFUSE_CODE_SCHEME_COMPAT_NONE is not set
+CONFIG_EFUSE_CODE_SCHEME_COMPAT_3_4=y
+# CONFIG_EFUSE_CODE_SCHEME_COMPAT_REPEAT is not set
+CONFIG_EFUSE_MAX_BLK_LEN=192
+# end of eFuse Bit Manager
+
+#
+# ESP-TLS
+#
+CONFIG_ESP_TLS_USING_MBEDTLS=y
+# CONFIG_ESP_TLS_USE_SECURE_ELEMENT is not set
+# CONFIG_ESP_TLS_SERVER is not set
+# CONFIG_ESP_TLS_PSK_VERIFICATION is not set
+# end of ESP-TLS
+
+#
+# ESP32-specific
+#
+CONFIG_ESP32_REV_MIN_0=y
+# CONFIG_ESP32_REV_MIN_1 is not set
+# CONFIG_ESP32_REV_MIN_2 is not set
+# CONFIG_ESP32_REV_MIN_3 is not set
+CONFIG_ESP32_REV_MIN=0
+CONFIG_ESP32_DPORT_WORKAROUND=y
+# CONFIG_ESP32_DEFAULT_CPU_FREQ_80 is not set
+CONFIG_ESP32_DEFAULT_CPU_FREQ_160=y
+# CONFIG_ESP32_DEFAULT_CPU_FREQ_240 is not set
+CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ=160
+# CONFIG_ESP32_SPIRAM_SUPPORT is not set
+# CONFIG_ESP32_TRAX is not set
+CONFIG_ESP32_TRACEMEM_RESERVE_DRAM=0x0
+# CONFIG_ESP32_UNIVERSAL_MAC_ADDRESSES_TWO is not set
+CONFIG_ESP32_UNIVERSAL_MAC_ADDRESSES_FOUR=y
+CONFIG_ESP32_UNIVERSAL_MAC_ADDRESSES=4
+# CONFIG_ESP32_ULP_COPROC_ENABLED is not set
+CONFIG_ESP32_ULP_COPROC_RESERVE_MEM=0
+CONFIG_ESP32_DEBUG_OCDAWARE=y
+CONFIG_ESP32_BROWNOUT_DET=y
+CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_0=y
+# CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_1 is not set
+# CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_2 is not set
+# CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_3 is not set
+# CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_4 is not set
+# CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_5 is not set
+# CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_6 is not set
+# CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_7 is not set
+CONFIG_ESP32_BROWNOUT_DET_LVL=0
+CONFIG_ESP32_REDUCE_PHY_TX_POWER=y
+CONFIG_ESP32_TIME_SYSCALL_USE_RTC_FRC1=y
+# CONFIG_ESP32_TIME_SYSCALL_USE_RTC is not set
+# CONFIG_ESP32_TIME_SYSCALL_USE_FRC1 is not set
+# CONFIG_ESP32_TIME_SYSCALL_USE_NON ÷?“¦©³Œ‚œÙ„à¾±‘T{ñ#”èÒ&_’µƒPOê«Aþ-R;oFË)—ƒ|ÿ—Ìòd®¿çå‡ÕÇÚåÀOHhXBJ}A©ƒ
+šRdŒ?wgó­F\
+‘±²ç9˜²C}Z‡è¿2ºj¨~™‹Ú‘·{yÌ–K
+§ßÔ!Áç¥Ëýq»=ã¨WM¨eP<ïþhŒ¡²`„t3µ€M	4ÏüXü¤¥Úˆñ9ýÓÁ‚¡½µVæpÊè©‚úîv,i×£I(È@,€þïðÀç1h¹Ú@ûnŽ§ÕÊQN¦0õmÞw0¥xÖriòé&Ÿ'­°¢iê—ÆAšyáh\*:1*æP_#†ŸÔ¬3oÃÞ¼åš
+äüŠŒ[ðÀ#^4ðá	–—55-AyÂ0ÉkFØ£cN™«èñ&ó­ãÊûïÝÄi¬;Ü‹'êªÂÎw†î<KœŠõëFo$°qÒ5H¢ü¶ïâüJi§ P÷0x!mô¯æûËl]!»$ìÞêk–}Ñ”Ÿ	%æY)ü_çáëS	#j/·’ZÐÿïÐ¹YüÔQßUk!ö5Žˆ´­c óøJÙ$0 Øñ¡IÈÒ	~€	Ðæu"ƒ
+l.ær˜‚ñ_B\IÍ¬ªp7C‹JI÷ãˆÝò¼F±è„€„OµõìshZz°Z¼S‘)‡\p-’±Z…¬µ^šçóh»¼,ÝÂ* y’)¶YGEH[Ífr`¿À%“Ú¾uŒUßGl0 Ô¡Å%Œî!ÕV¥=äÌ½OÕÛ«8/]åá-œtîR
+à,	Å	CRÛ³àWu«pñ%Edîžã.¼LÚ8òj¡}xíŠJ93€ùÇÂÚï}%}éÊ¸Ñî!¾ÚnUúžp}½]«îs×È·ˆAv|‚‹¹;óLW‰"Z!rÁŽõ´ô^ 
+pÅÖÕ¬ö&$^Å© ¯ÓÓgE¶å<ÙÎ÷¤¯å{bÔ>p*bñ!=îy.Ûb²¬X„N*˜IEv÷‘Ï)áÁb¡g19ÇûWDÍÔQ-ËÀ±òh:‚]òÔôuãœv`¹Kðn²ô^;ã ¦Jˆ2ÊÞ/ ¾²R¨§5»üÿR¹,¢¨…ÏÆCv'¥5”Mò ŸHâm4&C¸h ¥g%ó¸ÀQŒ?aÑc/r¥¬#æu€‹EÙã™ßêû«¦¨È¢?ÜM«Ñú¡ßå`›œÈ.¶ÝÿŽ‘%Xd§«‰€$©v€†˜º;Ym-q4Ñ_	sfôAòÊý©W—0ç’ñÓªT  —r_ê„yµžNÈˆ¹û9[>ÁÎâ©Lý”-&‚P~µ[ýl
+8ê0>:è¯¤Á®"™u¶Ý-ë7
+™ŸêR]¹œoÝ”˜<³âƒÍ„Ð¥àbÔå^Ô‡BJ×¨‹:[blÚ¨Çaî€–çæmõ7ú§N@C?RúÉÝ•%üíXÊÃŽ€ï4g.÷w5Ôñ+0Ûb? ¨xú'Q=ðêvÀšh>D
+*#å>lNÛMîÑŸmýÝ›¾$ì¶*½Á^œ¥9 Õ8
+t×£)éþ¹@õ/Éj}Cå]FƒlÅrE¹cçn Ÿ6u+ë¨'x.ÑDÌf;äGýÄÄoÀcJ5ÔË”ï¼\<Ñz™Ðƒ¸Æ^£µ.Z+lqÄ¦ÈAòYk6À†NšWÎž›ØO·Sƒ¦1mÑçØ²0ã Z d°O^ÄÚÚkm¦8ê´®?è£xc¯¬kUÆtÐšƒÒ(Â¶?$´|ø°¢ó!aô~ØªL³4
+ŸšŒäâ`šyÎØø.^øæóÿt€qA©ErBåÌ½FyÍÀÒá‚ZWPI‡¾³+Ñ¸—ø)ð1˜ÏAlþù…~¦ã>nÖ°R …Vª¹¸{Û™×`^ŠñÎ9•13þ®Þ=å…‹½0‰~±íj¾§* ‘ê¹$Ó¥žÒ/Töð]¼ˆx¨ÝuTó	uõ7GB·òÿè?*2«M„×bb9UÂ&9”^*’…TÐ]8ÀVwi`,óÑ˜´p¡9À(Lú•qTªUŸäª§_š`2L8MÂTCÅfbÊ2JgŸóË…‘K»ü‚µ.ùÞG>X{Qo§éËÏ? äÕwá—<QxXô^/œ¯“ëPB2ˆñ~G	Õi¢Y%äeös×ý=«yŒ·W´‡„>·{H9l´ø¸ÕóÇŠ IDíUªÖùp®_ÑOé¯ƒŠMŠUMøÜ^äËiÑ'/â=YóÍs1õ2UÚa‚|“{ví¾ì6¨e¬T¡O,¼C·h{Õ“­†KI¾¸‡Ô§$1zvzæŠW>Œƒ$í6€‡CÐõlý±,Þ2LÎz¨½1ä°œBûf ·½™ºêeVxÀÁøF&s+:kïA£JSGm]<°†N€Ç}§’3l“¸°]´Þ,ÏÉÐW£”Že¾+²€K†µÀàN¾þ~þŠg3Fi¿éíÞvÒ§¼ìWà-2qxâLûp¶”$¬Èö>{IìÔïè‹ÄäET£ÛpÆò/i<Ðå¾Ê0(ëU2‚¸¼8$vÞbûwù†‡›Î;¯åû°LÛclóvEýÊg(Š_¬ºJô/-är38e‹.fnâÞãx§*$:V5dÃ.d(&VFÕ»5c²ž¾H¬C7’åÙ²3È”<:õsôðè]ÔR„²€_«Œ`1TL«€¥üìpXÕö¶äKÈO ›îÌ‚y|‰PÛC”rÆŒŸ×>Éòh6ÎÙÜ­Œj`ÚI„ï@¿÷’œ½¿s.6D
+´-éÓêf(š®	Òç«¢ô¬R ¥ŠÅ¶&üÑQÿJ"9 lb¨ˆÞ3â©}ü÷S=A¯Íq	j»G«½[ÜÈë	˜„l¿ñw!l> jÿcÖ’e£ôg=›f	wTTõí–ÈYßíÜÉ´#wuàŒe#¤GGøc	>ïJ}.Ÿ8,P“3 dî»Hu‹¦»tBŒpWÀ[üòUô&Rƒ&‚oŒ‚ Õc£É;Ã§Ê	ÆàP}IUB½ÄŒ—ò©óvÿ«ÀÊðg%µØêÎ+¾ÊE
+	D‘©s5yîv"Äã›¨œÍ)„”7œe]±f¾Û/|§Ì¼N(˜Z$‚)¾Xèì…­¿rŠ"¶;1î¢,s ïÂy“Ìµ¼NSuÿ1‰íLÝ2'ÊMµñ¬ÙoÚŽlS«CPóŽŸ½$…íàÉO®”ð»sýöZžÇE6ºÿ²fp¾™MÚ„xú¶éOªý6:ÚbI‘»¥wà¹aŸ^ÞR«#¨:÷‡âC¯Lˆ”júBM[XOG>‘õd^€q-×@1R–¼Òk3 tö@ß!¤^@¥Æ@ó¯S/¹TáE‘>ñ°ø;©	±Û‹pö—Pmò‚Ë$Ã;¤ÑpTÈ»IQW‰%Õ/ô×ïÜïv}ïS"×=“N’ë>>º¤ ÝìB™ÒgD–pJ,÷GñëIöãåÑÐÖ¹¼aN—:RÓWÎ²‡5¥XòjôÝkmW¸aÂÕÛZ¤NÁKþ£JØ¸–î™<SËi®C¢n½“u’µÁþýõ³š«9éðB%ßZˆ!WÉÜÖGW©ÂHqØè*v„Ù€rŒ%Á'Ô1üp°0IàPÚÈ”wmŠ?>ú´Å­¡\Ö(Í­²1H±\»Ï’7PzB¨ÊÌsrt&V+Ä&%ÒjÇ¸·S§WöË‡§çwý.Ý­L Aó«àIQœ³ÓÂ®Ï¡˜~0ë-~FÔLœ€çK¹âhûœºÉÆ^¤u/ëycžxzé®oµƒ7 ¬x`»4ŽP¡¨ˆµYšŠÓ$I7tJb„¢5š“—â«÷aÎ²»tr‹yc¹ýùEðÄËC4üýãr°¡|!X(à.mi@X.î«Ž^F7%îî·3Ô7„—;q>×vª¼ô¼?%–ÊßP/°8Óo‰›ë|×hÙI}-Š—Gc«7íœæšáÌ¶j3}[jwKÎynáMLÔ"AnÆŽÈ÷†ë;õÙþ@·œ:‰ Qµè¡ž¡çû/ùœ:ÉÐs#8Öô‰¢ïå»£†ÓŒr‘æ¡Éí~·Ò¤+Û}ñëŠØïQò¦*­·¬=µÕ™0{Ï‰Ž^õ`;€Õu-óõNŽÕÉ'êS5=³“*¹	ÒJíÆ´akE–b=áDB”T‡æ¤‰ÐdOÙÅ=ŸGÒêm®A#éÊÊˆ$pFÈvmêÙEHäu‰9±mPe;;ö†“ö²b7š;.¨ 2¬øq>W¤. §¢ Ž²¾F‡E>œûj +w“tB)a……‰zoC-&ëm1ßU$jX;—:Œ©EpmØ“O(ªÚå`©ßÛìîÒ3«|Ù“
+úøaÜâÊöù/4ó×·§h©¿ñ,2š·ƒ/|g “¼(ækü¦Òqƒ†¾^ÕÈ&js{„Ûªànýú«¶žÅøv‹!kðxq'@¦NÄw‹O×gƒö<ÑH¾++Y{ÁáÚ2pe‹Þâ-y~†îò«NES MÆ¾ìöFÇXhÞçòm(ÒUçÒD—€Ùo8õC'HM€: •#ºVá]:[ÓZP'kDWx‚¿ZøÊô@¿q/ôý¢×g‚G6ÏÊÆ"ìÅ ·1õÅZ¹T€œ(«B 2®µ`UÖ4¡«B3ðÂó©ËÞÂçô”~¨-J)â¹R®?ý
+æÂlL5xäé¥XÈlÃ
+òîá'ÓÿšŒ<Yâ.ÄiŒ^,ÜÌ ’Ðö>ÑŒ-'¡öw–ºøñ¡VÀ|S»,¹…å< 6Ñ_—•^u²NäiËíwÇ25†z¯6,¡»F®óWé-*s¼Ú“åªÎ£¹ù÷Ü~If^¦Ÿ„ñ_ß§½³ÀŠ²%eƒ‹W¿Ì~ª.Õ&¶oÑ¥8•fô8ÆÒ¯·Ep“/¡*míÄwDZŽr/KM–n,Úçnt*¾T^¤_*"—	0ËˆqoH‚YùÉ¥N:'—-œ±í×ƒŒ÷œ–87©-Úþýú/g‰…l\Mbfk¼|™O­¯}è¤ÂH‡»Þõ¶¿ºX‰‘¥$—ý•Ag;´ªéÿ°»ùŸpˆ`ÏçÏéHpMRÕÿZ°xð8K;QbÐÜ’§…V.k¿ÖtÂ¶:8@áÛa9|a =ÒV­gaXŸ"áj:ù™3EZ‘føU'!1ZÉÛß
+  hXÏÿ×ù¹F5—†dv:®G†:ÉÂ1LÕÚÀáÒx‚d)ì'Àâ•œ7ª*8ÍUví L¦gš#°gèwÏžRã¨¸²Îã¿ŽÎ¤—KXõ5>ÿ/¼¿~îiïà‡8ggcèKPÜ’>ÀW_±åìÇTÁ*„ç˜w@–üVÏ9ø¦AÖ×¯Ø(@N+y”€Æ^\ÙµIF!¾)w&îÏýcÀƒêîOT™ñ:ßÒNz5éÐ)©#‹påõÔ¦+¼±60ñ×á^ˆÃ‹˜_ê×ï¨† ZûnjƒdeI6¤˜ø=Ä¼—zd9–=^„áÑ8¬š²
+6Ý×bôõSvÓ:®Š	ð³&?ªâŒ\
+Ú×½ì»ž”Š,ãaÙ’NKÉŒpü £ÎÑ¹=¦¸3iwÄÝÃ.U-¨lâùä˜Wÿ‹C%ö[ó»;t×šwj§úIéYüÍêÉ`¼’¢8ÅƒócŒŠƒp‚—eúƒ*¬\0ÛŽ'ÐÔiu¾è¦o¨Â_G€?>ct{pÁë‚˜Àí6AíÆO¦e"ùi¥W‰.½·¼¸xJ_½ðÿòµ	®œê¹s,(3ê›ßØ_5-BÇM+˜šµÝíÖ-Y5B¶—F:2_«kMÈ/‡£Æ“õ¾Ø3²ÐKø‰å1õ0{ÙLÎJzÏå2ítYT_«U‘¤vö!9Û‰WtíZÝí”ænêÔˆ­AìuVÊ9¢/@ýšg’æ1¿‹
+HˆcZ.ýyYÚ&€ÆZ§ÌÝÆe&Â»I=Iš}\!¿ØœU‚í&G]½]9Q>ùüCe¥>k¦PÌéá~Æ€EíLñ%ÓØAM²,ÍeXˆGÃ|›7Qx[ŒN*z IÞOGìÞõm°¢»ÏwµJ³µSŽ\M¡ü4ºúî+mI­WhúVµu4¤5ùn›wó‚5‹¹ì^¹„öÎ·­L€¶Ú_™f±ÖÃˆÁw×J Ð¥†¶ôMñ~u,Ææ=+ áè#ó)l˜ã™0£¤R ŽR©§kýyÉZÆê÷Ýª¨¨-ÃÜlˆo”j¾7§˜QÃ³¢M»A#&Ã]è!9ŠK' `#›ä\‰òAeƒAª­×ŽÑb†ßÛro£‹†	QÚ€?iS…Í\h-OÙ¥Õ‹Ò#¥Ä£".ßY#¹æ1p;Ìc­Ç)†LIY0¢&-ôôa¦Êƒð0¤¸êMw)¾âm»Ê!V²¼zŽáÊbwÊ^‰þ®âÌzõÒj
+3nˆáÓ¶Æd›ø+,ñ3´ý¶¥š4ì+‡.K+Ä€t>'3Š8q°÷‰ñ/£ÿ+|N>™É)YAF§­c5ÞÖR³dÂ—KDŒå×çp€ìóìÎÒ=ò³¾"«°™‘Ã’90Nãë}»m@oðXPz.F3.ß_"lì“É)Âç_Ï¨Â£/Òª§$TãCy~!y	ÐÜarÞámS&‹ª­œ$×û-ìºÝqŠä¨G›âqL¶È£{Û…mÍX“í9ã£ÒúþÎØ©!O©ðÚ’žÖeP6¼Â[Ï:ôC\!Ct<£ô(ðäÜC¾Ó S‡è­Ú³³Jéüó4\äkˆÃu9áOÇqªÞËò		w®jFß£æ`†éiãŽÏò?µçPæ€Kc€å6Azï‰£jÕm,ç­µç)ùeb5JòÌ¥Š¯Íä0ÿdC§53‹‡ãâ
+BØPÅSzsfŸ/äÌ„¹5Oo¤…ˆµsW3{5LÉiÛŒRá¦ðïtgnq§×fÌ¤',^a€Ç&~ÞUýïèlÕS×“:L,9†ÇcÝk3h\§‰£—8à8'U‹Vp«?Ç Ù^¡8°œ^&jo¸}¹\ƒ	8—~¼÷¡‹X¡YŽ?‚+×çÉ+þ>€PŸ¤ W…¬–Eþ§>XSOê"Oë¯\c*óRýï¤,SòÊ(N»d¶Ïzö¯b1ó‚«u®ÌPÕ
+(>¤üyXNÍXÞ<¸¿õ×Ì@@UõÊ¥¼°í“{LzŒÎz½„&ÐÑSùl=‡_ƒ£60æ)tùAºŠ&9ýT„TÞŠ&%6=eÅ±)µçÁ"qj‡Á»…)Åa`á”UX{O@-«ûÕ2kÍìç]œ¡±™AŠ¾)D_Ÿ,ÖV
+Mèœ6”ah¶âÁû­\™×jiÅÃ(t?ìà§#áÚêÍ‹ _L @ëXµÊÆÃ¾¥™g/übpó«\©¿6×npS#.†'{ŸÈ¿¶"7Ãy»ï¿Gb²Ôù@T°Ò¤ÖëìÃz4ÄålzIð°ý§“jä/2ÃÊºEVåÌQp²Òæ´…†5âfúÞp™‹­œa1ƒqå©…½D¸«MSñVÚxÈ™Í@´šÈ1?ön@Ò¶–ÓÁ]¯¦g˜–•m×À‘]GÇ½¢1Éh‚ E,·àtH éë×9­ ]¥cYvÇ64^Kêè°I
+šU n#¬€‰˜mš™Ì8€ü}©&®àÅ )(çGŠÛÎ¹)ÄjCœ±³´+0úd!Å;œö¹|§ñC>veÒÁm–ÏN;u•Ëì}EÍ«l¶®ö­¢+²ÐH:J›ô—s(ýÿS5½'}ÇR¢ð”#IJ¥§_2ý°e"%ºK3Ó§T°F÷JL½KWp3Ðˆ÷xhèHëy­6xâ
+ëpwøÔCcÓì×v¤YQÙ™U±| ið'BQë(qyüaˆÃ(9‡Ž ƒú?"1º¦vz™¤Ms¯ÖÄTË”à´¢Þ’Øñ)Yg¨2…cæ—wt;2­¶ÁÐ“/nP®z¾ÎR»Zµ^³(Ú†Šˆ×²
+ñœ´J³ÐZ ~÷¤È€8”D’£Úœwƒƒ-CÆý—CJ\ÓE_
+ "J¼q{t‚Í  Å}/S×;rLÅÈå%ÈK€vuîãÑêg˜°eä‹ß=¹„6Ìê¸/þpý±±þeN¾dkeê¾SÇm=¦`"7ÍøÝ’ša…UÂ¡ªM—4ÔsˆˆûÇt‰õ>è.C«¯ÝhêE%évÛ–B‰·ÀBø2Ž”ïú¢–¹~ˆÝÆtÙý»‡SÀ}°x½Ç„cÂP^XÍÿähK¢OLz«{Þ˜»ƒÜõJ	úèôÆÖ¶ÁjpeõôjQvªºN’†«šrõ&!Ž—#³­¿[#N*û^W“ªÅC	žÚî ˆ
+”À¨#¢cÉjŒZ…&b†ÒëÚåÔÃöØB qd}œRˆ ü›	ÁefDðã)!ÕèÎtÛoêNõüø]\TÝŸeþ¢Xõ¹Q”‡¶~Ý¬È…x¯@»|fÌ}A}˜Uã?ž\ï]'º¢ÒŠþì—çô9jPÅËÜzìUÝ©åhlñé#¢Fi±ÌÁõ†åý"óm‡¯•V×|è¸]`ãÖ4²Ì›ú^s-ÀØ2C”‹K”]Î Õ›§¨o¨âÊ=²q“Eá2pC—ÕvƒÂ‡ZN Û¡c¤ACÚÿÑÓ¦÷›tö43Z"ZŽµv@‹h´B<¨ú¤hŸËL¬~Ó“tTáINBëŒË„\|:Q(úGÍ‹s`©OÃQï-«–ÝS›Zæ†8O‚Òà‰ÉBù!bá28þ¦öñëmä® /š»63L	a
+¼•Õiø‹3@–Â YÇª5p“º¢Ü]ÄúÍäbrÞt­íuf¼48F…
+®]+ –G%`†0b~-c/––·Iª ÁÅÎýÀ«Õ‡B~¢l§d»¥\úðMÖ D=ijG•
+Y*Âƒv/?è…f|éÉÜMÖë}Œ·0Ng,Ö=GÎ*ùôcjaÔÙ?8u/ëéR1iY83a¿x†þÐÀÌ9ßÚ1§_N$kf‰5gì\ÎQ{\ÖÀæŒ”-+ÿðí6ü“Ý”kE×CûÜõ`AEGïàÛ¸åm8á ”!¨Ú~Qº¤‘]td8|Ô?4zt»·l¶ÿãÀ·ÓJVÃâ	áêUKPë,K<D1(…µÂº”œñHz;¨þ[ãƒç×$ ÙÚ$×4_AéÛÂ`ÛçRÐî^f¼÷³}¤äBMð¬Y@§J+u}eLÓ«>k4ÀbÂ‘ ã2»f`VôuâNò	ê¡ãš<àrÄÔMñB<n·æ»Ôp¸÷42œ—
+¸ø]ß1¸¶K!Ø‚ó€Ó*7T¨ÊFÍX„ÈÄ,$•NÞ›1†¸?^…‡£½¥µmÂ†	ÅªEFÇvVá¶ÁÇaèwF‡À|¾h³<Ç€äæ¼J$ºÜy5‹¸x˜ù./
+ºÂ£tfÞ…·¯nxfKÏ`±Z’)É[¼ôTHA—:ßq—ìè®Û	(%]•©B#ø²y×¬4‘^½¢®˜lÊÎÁd<*5[¨¾Ú7?+ÁsúY­	H”çÊÆÈŒe±Ñ¯ïî£zÍ£4u_Î/úAM8MÄ…ØHj•7€Hœ'š
+çaÎ„UÊ²Äñ¿¾·l»¦S¹÷SfÍípŽÌCLwU#-)rY>.ÊrmöK@¿¤…‚ë0òcæ]ŠÍÚl‚('™'þ®ðö½bo«h_˜sÝÂ©¶³)´YaKÆ¥æXb£P·TÃŸ&Ï›¬sI¾Ÿ;OÒÇùÍ.‡‘;#üa…¹cÝŽôc°$%,3Oè¿³¥)F-P…[›Í¬~÷©rNÒÇ-°(w·ôÚ“Fí\åÞ¤Ï«“á)S±ÚNŽBuÅ"LÏI(É¥iâÙ+ðî•´0½BŠ­[Þ¢^ÖO>Ù>¨K@/~  R½v‹‹²Gû*{‡²ža=~siiŒ^ˆÒÞŸÊæEWÑ6 xQOË|sÚÏå¼&ÃÇ<ÒŸt÷\™Ú¿Ù`Àâ>É«Î~õÅ—^YµŸ£oæ‡—‰„(þaãŽ`É2xìFx­±[!TÞ§ä!²—â{^‡)Ò=&ç{Bmi	-_×‚‰Fr×tk'¯>|“H4ƒj_Õ8üÏþ–ýddmï–;àŸpv÷Õ‚†TXz%—Ch` Õæ³ŒK ÛsçXB•‰`Xø´-æ4'9·] h„ßû{^1|îÑð†^Þ	q
+¸ûñ­æR½¾ÇÐîÊÕ­(L«’b‘wf“¸³Bá×¬/R¨z+w“ïXµÈŸÚˆ»<÷;˜ÏúÀßW ™{)DbŒ òìXAL­‚›3Tmõ’ŠÉˆdAq\ûÐIy0ãüuÃSk¯¯P{t°ý78` ˆÜO°6Â5ÛHçÞE	è~9¯x5šÆxŠëÙ[c“udéFžpŒBÑ°“Yp*Sx[lîÁòZja;òr†Ö‰ú²I/l|ûÔ÷Èæ•G«ÁÊppìÖ_®AåÁ¯@W*c­üÐ¤[q@,ìW œ=«L/Y™>}y3ˆæÄÊ&ISá2'¼,–Åpc­2Ã˜òçiä:@ïâ­³€€dõ*EIBB…o‚ÁÖ!ãÔÍí~À#pê[g´iŠñlD}.4(6å[¦xCpôI¯Ñ	½ñJPËuZ12ÞwÖÃ
+žž¬ýØÍWHççx–ˆlÓºÒÎž˜Ré«a#G_j‰¡q™@YØæ%$>N8_ß. e§8*ŸÇ­§'	z¿L¾iÖ¨Ü„äâ‡.†Ã*ý`Ï®ýÇš˜ä	"-.’rJ91‡F6ÜM.;òeœ¹X ³³.Õ6p~¹ÃDU<A¬qŸÃêˆä:X‹?ŠŽTŽC!¤¢	¥Ý\êÅÒ.ƒRiCÖS´iæ/Ì>¦dºË1á&1?¤ymfç~÷ý•Ú4Ö—¾‘ãÿÛ0Oc(–
+›x¯cZ½biÕ*­Ý·c![ÔQ>ðnòÿçƒ÷xZ¬‘‹îKÈyxj(LX±÷Û×’5U²uCVA)º×¬sé˜Œ sÛ·‡å[äÀ@ÞkÍö"«Þú|HsÆ¬drd2Œ˜>ê®BR…KàŒ¢Vdò¦ÛÖV_«¼{û\+é¦ú»b€øï„R0wV˜¤%Ð~âFAdçÂ_?­ù3ÂpVVÜŠéÂ-.ÑšÕº“Z';ÉoLÛ€°ƒ.õéØ&õÉ5Ì¯å)R$^7¿ÞNÑ•pDSŒuAÔM
+¸‡á½¿,ÃPSñ‘)çD=eÃçJƒ?Íôˆù‘ñ^
+¯=C?6Ig×Þ4Ÿh—¬+@=­­càzÿE‰O¦c X[™e›È*Q ’Jbª$5•„X'«cé…äLOüHçèò¨_PGÅ³,Ò˜nÛ.àŸ(ž?'‡×ñ¼ù³ÀB“ï‹
+ÅóÇS†M÷Ç\:>“lløSõ¾hIkæ¼$»ìºþûî›€‰üðÞqFÚ–Ì=\/­ÃoŽ,¥’¬YÍ¢4sWÑ›Â=•©Â¡¥½`×,¢ÁÂžNVÈ¡mD-§Î‚EWq°ì}Lís]þ»Qsl·xÎuW-¤-Í¸Wm)´[fx% ½ûí|š…Ã­£}÷^¢þ¤Ÿ2—wZ!ã—Ó5ñºñv°Ç§~ebž„"…Ü4"è«‡·Ç,ž¶dä%³/ãà3ÖÒ>;	ÌJÅ²âàÓ`åOW<0{	çö¾¬\ˆõ¹nÃ#sò)v¦ˆÏwï3žU:o‰°VNVq1(”Æ7 vç‘—EŒŒh¦]ZAZ‡öiZð‰Ü €ÜÒ›€þ§È#|<µxÕ9Ø`Ÿ!#dUHxœò
+ƒi›vyÚßåÚÄ™€%¤'_í´½áÍý«B'&Kë#&Nš9‡ç J; *àíóÛ˜íý,ÝG>b¥†Éy<ôuÎg9OtÔÒØªR†MòQ3&Gæ>úsQp>,”>à¬a$
+’ÀræsÄÌý|äXÃR­¢Íˆ¹æK/ÌDÊ^b	ª²ƒ²Å:Š¤­ù	¿iö±t[ô£`g¯¿¢î‚Pí¦E²ýØmÄ×IcŽ(®Üƒ=jf—o‚O”™ß•c“Ñ Î"wÃºà¢ûýTÍ‘Ùþ !%ºv	AÀéF§rÎpwêK«14~¬ª~©Í„–X_GçVšéëÿàx÷}i¼ÉK¨¥”"X³€*( ¹›&;µo¥4LSWæ×¦.ûÃ†…Ò’Ô¾f na‚5Ã+Îd ’ÌvBùLº2Æš˜ž¡ùÜdí
+£æ©2ïF€+MKáÓ‘oÊœÐ’›öY®Xèª…;$ FÝqåÅÒ;Z˜¸î³<‚Wµž¦ï­åí„ç,nÌfãûŸ@yÚôiçÝ%õá,M<+»"Ö9°¢„î„}y¤e°žu}Kô¾•¬—ëê§…^2Pä]Ý±DÒ²ÿ“Ì]µ¸½žÊ6Ux.øåýÎ¢ó_íê ÖA/°z¡ @ÿ×hž3õj¤¥oÜÿô4sëŸú‘ÃûF¶h„žœ‘ü°ü(VPKÌÐH‚ ’òÛà4q×„?ê.¥8í«£•³/Ïâ9õ	RSç‰¿/—\    èÆ®œÏU[¸ðõ_M;y ºœ@¾¸”HzÑÊ©ØS]="ƒDòµµ>‘ïX£ækË¥Ó.L ~SøÅ¸óÈ>ªò’Ô'6]˜aJÐ™^                           „óFn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Ý}€£–>×È­9bºÜ6×h,.…h~zçt&õß÷Ejf†´¨aÎW§_Ü©ÒîH£)Öýba+mT]8œ·ÝMNhÅLXIU„ÎËJLþÔ4¼ç¢Rm=m Ý{rúDîùÔQñ@¼ï0Ý˜PH}ÁÉÈ³Oç®ðÿËvAA°ž‚WmôüßàJÅƒ«fÆn«}©ÜØ·õ±-E1-@Fý&—UAŸÒipC³³z¾AsÂÈ¼öAH,óM“Ðm•,´Ÿ°‰NC€6ý-³½ó!N Gé¼qaWbÝ 
+&KÚ×ëîI¯´õ„¦È3"ãžÉÑÐ†Â93t(f\Ý:%¯¾“d‰ËS³XŸ•äÃù'QO„®Þl©{J†9êù¥'Š.6æcæó³p­ÙHpç[Ñó#…F'š ´y‹Åz– .’ƒt 6Ùµ/#›¿0­!‰?†rLTREæ•|Õ!ÜTüÖÅø­›¹…™ãq“u	ƒö¬RÓýq~Ê*„ÉKOÐ) ä¡5ØÇ¦L÷¦rŽõˆ)ØX{ËuK£Ô´6W®¨#/4ƒà{Žžå–å×/ßxºívíGç6_2Úu<<°µÚ?Y·¶gI÷gR(O¼?3Îg'+ “WéÐtrÛ÷“³|¥aÉa¾œÖ–-•«¯‡»Ö'¨çÐmŠgÞ[ªêw¨Ÿc‡©pÐ²®fcpCÜµÛô:ÿžá–:[‡°n
+ƒ!'ÛãæÁ+¢½¡.®]\J<ˆÁÙØï“ÁUÏîä…&ƒ%SˆÛ*¼	?
+€Õ]#®hª?Ý@š+zÔ¹Hz™B³dPÌ(þ«1|ê?Â:IÓ´†G¶•Ê{xôeÙ¬*ï0Pœ$GJéùÀUè,ñûgÝ–ÖÙp“ÉXß®´§›#qL	d'õ#Ž=·Ÿ\|8p®Îñéºñn;Qæ½sªª³yÅèIÃm\ûË\õ z‰Zy\ÂÅåtBca/ócé“}Á;(:¶4ÂC1…ÔÞkÓ8Ý3'^ô‡V˜þÀ„ÚŸæG}Ä¦¡3íqcå8ÿ,¿u+‚·Ê¥«ËÖ!Ôô&\b8áŽoÌ«‰¹’Ìë±M 8å.C@µqÓ€+*™ÃJo®3½j¥ÊVB¯À(ºô ›¶zb½>NuíÞèvJd$ú/W¥©ˆ~Æ ƒuý­þXjW2¥	4Òl®AQC2,¬´1Ê@©2¯ð6ë]¾lçŸ§ø­FÎ•´£HVuº˜v|§Ú”:ýic¨¨n6·°ð`Ä§rBkpfË)’á(#³ö°ŒoEðÙ·‰¸yß0bêw ªÉúh³8/6ÛØahof1NÂZ†Ü]k–b÷XÐîÜ1¥ÃXâ“|‡×	Ö &9©s\JOÚo©¦©¯3æ°øõ“Ð>ô«òR¾ŒQÜ(Sè#¿Ìnß­“¥º6a3þÓvöÔòß¥.›¤2ÒLboÜÂ€ê’øÃÎ³KWýŒâîüò ©‰g }ú,TO
+Kd)qJÓ­Ç›T·?Ô(6öÁUþ®Óðè”×_^æœ²¾Ãüò:&€öfüf½A]_m?ÿ*E’~Žs|E-7ð’þÏÐiTý>Ö07"Îxæ&Õ•Ñ±2–½ûQ>9½ëÏ
+<á$w,A¸qKÙ*	÷®ñp;xÎK«–¤¶Î	ÆdèQ™xä^:ßdgŸ~¾™w2ã|ÀÖÃóÀè"J{òJ\Èè¤œÝ²8ðPKÁÊW3ö.ìÚ­]    èÆ¤Ï±Àý‰ËcðË¤àæsG‘Ý@ÿ·i£‚ãFÅjPŒÍšeÌ)©Ñ%å)$¤¶ÏƒÍkP€ö´{÷{¼±’.(@ßónXØ‡(õ@ê›¬/ÿÊ±                          €ögD                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            TT Configurations
+
+#
+# Newlib
+#
+CONFIG_NEWLIB_STDOUT_LINE_ENDING_CRLF=y
+# CONFIG_NEWLIB_STDOUT_LINE_ENDING_LF is not set
+# CONFIG_NEWLIB_STDOUT_LINE_ENDING_CR is not set
+# CONFIG_NEWLIB_STDIN_LINE_ENDING_CRLF is not set
+# CONFIG_NEWLIB_STDIN_LINE_ENDING_LF is not set
+CONFIG_NEWLIB_STDIN_LINE_ENDING_CR=y
+# CONFIG_NEWLIB_NANO_FORMAT is not set
+# end of Newlib
+
+#
+# NVS
+#
+# end of NVS
+
+#
+# OpenSSL
+#
+# CONFIG_OPENSSL_DEBUG is not set
+# CONFIG_OPENSSL_ASSERT_DO_NOTHING is not set
+CONFIG_OPENSSL_ASSERT_EXIT=y
+# end of OpenSSL
+
+#
+# PThreads
+#
+CONFIG_PTHREAD_TASK_PRIO_DEFAULT=5
+CONFIG_PTHREAD_TASK_STACK_SIZE_DEFAULT=3072
+CONFIG_PTHREAD_STACK_MIN=768
+CONFIG_PTHREAD_DEFAULT_CORE_NO_AFFINITY=y
+# CONFIG_PTHREAD_DEFAULT_CORE_0 is not set
+# CONFIG_PTHREAD_DEFAULT_CORE_1 is not set
+CONFIG_PTHREAD_TASK_CORE_DEFAULT=-1
+CONFIG_PTHREAD_TASK_NAME_DEFAULT="pthread"
+# end of PThreads
+
+#
+# SPI Flash driver
+#
+# CONFIG_SPI_FLASH_VERIFY_WRITE is not set
+# CONFIG_SPI_FLASH_ENABLE_COUNTERS is not set
+CONFIG_SPI_FLASH_ROM_DRIVER_PATCH=y
+CONFIG_SPI_FLASH_DANGEROUS_WRITE_ABORTS=y
+# CONFIG_SPI_FLASH_DANGEROUS_WRITE_FAILS is not set
+# CONFIG_SPI_FLASH_DANGEROUS_WRITE_ALLOWED is not set
+# CONFIG_SPI_FLASH_USE_LEGACY_IMPL is not set
+# CONFIG_SPI_FLASH_SHARE_SPI1_BUS is not set
+# CONFIG_SPI_FLASH_BYPASS_BLOCK_ERASE is not set
+CONFIG_SPI_FLASH_YIELD_DURING_ERASE=y
+CONFIG_SPI_FLASH_ERASE_YIELD_DURATION_MS=20
+CONFIG_SPI_FLASH_ERASE_YIELD_TICKS=1
+
+#
+# Auto-detect flash chips
+#
+CONFIG_SPI_FLASH_SUPPORT_ISSI_CHIP=y
+CONFIG_SPI_FLASH_SUPPORT_MXIC_CHIP=y
+CONFIG_SPI_FLASH_SUPPORT_GD_CHIP=y
+# end of Auto-detect flash chips
+# end of SPI Flash driver
+
+#
+# SPIFFS Configuration
+#
+CONFIG_SPIFFS_MAX_PARTITIONS=3
+
+#
+# SPIFFS Cache Configuration
+#
+CONFIG_SPIFFS_CACHE=y
+CONFIG_SPIFFS_CACHE_WR=y
+# CONFIG_SPIFFS_CACHE_STATS is not set
+# end of SPIFFS Cache Configuration
+
+CONFIG_SPIFFS_PAGE_CHECK=y
+CONFIG_SPIFFS_GC_MAX_RUNS=10
+# CONFIG_SPIFFS_GC_STATS is not set
+CONFIG_SPIFFS_PAGE_SIZE=256
+CONFIG_SPIFFS_OBJ_NAME_LEN=32
+# CONFIG_SPIFFS_FOLLOW_SYMLINKS is not set
+CONFIG_SPIFFS_USE_MAGIC=y
+CONFIG_SPIFFS_USE_MAGIC_LENGTH=y
+CONFIG_SPIFFS_META_LENGTH=4
+CONFIG_SPIFFS_USE_MTIME=y
+
+#
+# Debug Configuration
+#
+# CONFIG_SPIFFS_DBG is not set
+# CONFIG_SPIFFS_API_DBG is not set
+# CONFIG_SPIFFS_GC_DBG is not set
+# CONFIG_SPIFFS_CACHE_DBG is not set
+# CONFIG_SPIFFS_CHECK_DBG is not set
+# CONFIG_SPIFFS_TEST_VISUALISATION is not set
+# end of Debug Configuration
+# end of SPIFFS Configuration
+
+#
+# TinyUSB
+#
+
+#
+# Descriptor configuration
+#
+CONFIG_USB_DESC_CUSTOM_VID=0x1234
+CONFIG_USB_DESC_CUSTOM_PID=0x5678
+# end of Descriptor configuration
+# end of TinyUSB
+
+#
+# Unity unit testing library
+#
+CONFIG_UNITY_ENABLE_FLOAT=y
+CONFIG_UNITY_ENABLE_DOUBLE=y
+# CONFIG_UNITY_ENABLE_COLOR is not set
+CONFIG_UNITY_ENABLE_IDF_TEST_RUNNER=y
+# CONFIG_UNITY_ENABLE_FIXTURE is not set
+# CONFIG_UNITY_ENABLE_BACKTRACE_ON_FAIL is not set
+# end of Unity unit testing library
+
+#
+# Virtual file system
+#
+CONFIG_VFS_SUPPORT_IO=y
+CONFIG_VFS_SUPPORT_DIR=y
+CONFIG_VFS_SUPPORT_SELECT=y
+CONFIG_VFS_SUPPRESS_SELECT_DEBUG_OUTPUT=y
+CONFIG_VFS_SUPPORT_TERMIOS=y
+
+#
+# Host File System I/O (Semihosting)
+#
+CONFIG_VFS_SEMIHOSTFS_MAX_MOUNT_POINTS=1
+CONFIG_VFS_SEMIHOSTFS_HOST_PATH_MAX_LEN=128
+# end of Host File System I/O (Semihosting)
+# end of Virtual file system
+
+#
+# Wear Levelling
+#
+# CONFIG_WL_SECTOR_SIZE_512 is not set
+CONFIG_WL_SECTOR_SIZE_4096=y
+CONFIG_WL_SECTOR_SIZE=4096
+# end of Wear Levelling
+
+#
+# Wi-Fi Provisioning Manager
+#
+CONFIG_WIFI_PROV_SCAN_MAX_ENTRIES=16
+CONFIG_WIFI_PROV_AUTOSTOP_TIMEOUT=30
+# end of Wi-Fi Provisioning Manager
+
+#
+# Supplicant
+#
+CONFIG_WPA_MBEDTLS_CRYPTO=y
+# CONFIG_WPA_DEBUG_PRINT is not set
+# CONFIG_WPA_TESTING_OPTIONS is not set
+# CONFIG_WPA_WPS_WARS is not set
+# end of Supplicant
+# end of Component config
+
+#
+# Compatibility options
+#
+# CONFIG_LEGACY_INCLUDE_COMMON_HEADERS is not set
+# end of Compatibility options
+
+# Deprecated options for backward compatibility
+CONFIG_TOOLPREFIX="xtensa-esp32-elf-"
+# CONFIG_LOG_BOOTLOADER_LEVEL_NONE is not set
+# CONFIG_LOG_BOOTLOADER_LEVEL_ERROR is not set
+# CONFIG_LOG_BOOTLOADER_LEVEL_WARN is not set
+CONFIG_LOG_BOOTLOADER_LEVEL_INFO=y
+# CONFIG_LOG_BOOTLOADER_LEVEL_DEBUG is not set
+# CONFIG_LOG_BOOTLOADER_LEVEL_VERBOSE is not set
+CONFIG_LOG_BOOTLOADER_LEVEL=3
+# CONFIG_APP_ROLLBACK_ENABLE is not set
+# CONFIG_FLASH_ENCRYPTION_ENABLED is not set
+# CONFIG_FLASHMODE_QIO is not set
+# CONFIG_FLASHMODE_QOUT is not set
+CONFIG_FLASHMODE_DIO=y
+# CONFIG_FLASHMODE_DOUT is not set
+# CONFIG_MONITOR_BAUD_9600B is not set
+# CONFIG_MONITOR_BAUD_57600B is not set
+CONFIG_MONITOR_BAUD_115200B=y
+# CONFIG_MONITOR_BAUD_230400B is not set
+# CONFIG_MONITOR_BAUD_921600B is not set
+# CONFIG_MONITOR_BAUD_2MB is not set
+# CONFIG_MONITOR_BAUD_OTHER is not set
+CONFIG_MONITOR_BAUD_OTHER_VAL=115200
+CONFIG_MONITOR_BAUD=115200
+CONFIG_COMPILER_OPTIMIZATION_LEVEL_DEBUG=y
+# CONFIG_COMPILER_OPTIMIZATION_LEVEL_RELEASE is not set
+CONFIG_OPTIMIZATION_ASSERTIONS_ENABLED=y
+# CONFIG_OPTIMIZATION_ASSERTIONS_SILENT is not set
+# CONFIG_OPTIMIZATION_ASSERTIONS_DISABLED is not set
+# CONFIG_CXX_EXCEPTIONS is not set
+CONFIG_STACK_CHECK_NONE=y
+# CONFIG_STACK_CHECK_NORM is not set
+# CONFIG_STACK_CHECK_STRONG is not set
+# CONFIG_STACK_CHECK_ALL is not set
+# CONFIG_WARN_WRITE_STRINGS is not set
+# CONFIG_DISABLE_GCC8_WARNINGS is not set
+# CONFIG_ESP32_APPTRACE_DEST_TRAX is not set
+CONFIG_ESP32_APPTRACE_DEST_NONE=y
+CONFIG_ESP32_APPTRACE_LOCK_ENABLE=y
+CONFIG_BTDM_CONTROLLER_BLE_MAX_CONN_EFF=0
+CONFIG_BTDM_CONTROLLER_BR_EDR_MAX_ACL_CONN_EFF=0
+CONFIG_BTDM_CONTROLLER_BR_EDR_MAX_SYNC_CONN_EFF=0
+CONFIG_BTDM_CONTROLLER_PINNED_TO_CORE=0
+CONFIG_ADC2_DISABLE_DAC=y
+# CONFIG_SPIRAM_SUPPORT is not set
+CONFIG_TRACEMEM_RESERVE_DRAM=0x0
+# CONFIG_TWO_UNIVERSAL_MAC_ADDRESS is not set
+CONFIG_FOUR_UNIVERSAL_MAC_ADDRESS=y
+CONFIG_NUMBER_OF_UNIVERSAL_MAC_ADDRESS=4
+# CONFIG_ULP_COPROC_ENABLED is not set
+CONFIG_ULP_COPROC_RESERVE_MEM=0
+CONFIG_BROWNOUT_DET=y
+CONFIG_BROWNOUT_DET_LVL_SEL_0=y
+# CONFIG_BROWNOUT_DET_LVL_SEL_1 is not set
+# CONFIG_BROWNOUT_DET_LVL_SEL_2 is not set
+# CONFIG_BROWNOUT_DET_LVL_SEL_3 is not set
+# CONFIG_BROWNOUT_DET_LVL_SEL_4 is not set
+# CONFIG_BROWNOUT_DET_LVL_SEL_5 is not set
+# CONFIG_BROWNOUT_DET_LVL_SEL_6 is not set
+# CONFIG_BROWNOUT_DET_LVL_SEL_7 is not set
+CONFIG_BROWNOUT_DET_LVL=0
+CONFIG_REDUCE_PHY_TX_POWER=y
+CONFIG_ESP32_RTC_CLOCK_SOURCE_INTERNAL_RC=y
+# CONFIG_ESP32_RTC_CLOCK_SOURCE_EXTERNAL_CRYSTAL is not set
+# CONFIG_ESP32_RTC_CLOCK_SOURCE_EXTERNAL_OSC is not set
+# CONFIG_ESP32_RTC_CLOCK_SOURCE_INTERNAL_8MD256 is not set
+# CONFIG_DISABLE_BASIC_ROM_CONSOLE is not set
+# CONFIG_NO_BLOBS is not set
+# CONFIG_COMPATIBLE_PRE_V2_1_BOOTLOADERS is not set
+CONFIG_SYSTEM_EVENT_QUEUE_SIZE=32
+CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE=2304
+CONFIG_MAIN_TASK_STACK_SIZE=3584
+CONFIG_IPC_TASK_STACK_SIZE=1024
+CONFIG_CONSOLE_UART_DEFAULT=y
+# CONFIG_CONSOLE_UART_CUSTOM is not set
+# CONFIG_CONSOLE_UART_NONE is not set
+CONFIG_CONSOLE_UART_NUM=0
+CONFIG_CONSOLE_UART_TX_GPIO=1
+CONFIG_CONSOLE_UART_RX_GPIO=3
+CONFIG_CONSOLE_UART_BAUDRATE=115200
+CONFIG_INT_WDT=y
+CONFIG_INT_WDT_TIMEOUT_MS=300
+CONFIG_INT_WDT_CHECK_CPU1=y
+CONFIG_TASK_WDT=y
+# CONFIG_TASK_WDT_PANIC is not set
+CONFIG_TASK_WDT_TIMEOUT_S=5
+CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU0=y
+CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU1=y
+# CONFIG_EVENT_LOOP_PROFILING is not set
+CONFIG_POST_EVENTS_FROM_ISR=y
+CONFIG_POST_EVENTS_FROM_IRAM_ISR=y
+# CONFIG_ESP32S2_PANIC_PRINT_HALT is not set
+CONFIG_ESP32S2_PANIC_PRINT_REBOOT=y
+# CONFIG_ESP32S2_PANIC_SILENT_REBOOT is not set
+# CONFIG_ESP32S2_PANIC_GDBSTUB is not set
+CONFIG_TIMER_TASK_STACK_SIZE=3584
+CONFIG_MB_MASTER_TIMEOUT_MS_RESPOND=150
+CONFIG_MB_MASTER_DELAY_MS_CONVERT=200
+CONFIG_MB_QUEUE_LENGTH=20
+CONFIG_MB_SERIAL_TASK_STACK_SIZE=2048
+CONFIG_MB_SERIAL_BUF_SIZE=256
+CONFIG_MB_SERIAL_TASK_PRIO=10
+# CONFIG_MB_CONTROLLER_SLAVE_ID_SUPPORT is not set
+CONFIG_MB_CONTROLLER_NOTIFY_TIMEOUT=20
+CONFIG_MB_CONTROLLER_NOTIFY_QUEUE_SIZE=20
+CONFIG_MB_CONTROLLER_STACK_SIZE=4096
+CONFIG_MB_EVENT_QUEUE_TIMEOUT=20
+CONFIG_MB_TIMER_PORT_ENABLED=y
+CONFIG_MB_TIMER_GROUP=0
+CONFIG_MB_TIMER_INDEX=0
+# CONFIG_SUPPORT_STATIC_ALLOCATION is not set
+CONFIG_TIMER_TASK_PRIORITY=1
+CONFIG_TIMER_TASK_STACK_DEPTH=2048
+CONFIG_TIMER_QUEUE_LENGTH=10
+# CONFIG_L2_TO_L3_COPY is not set
+# CONFIG_USE_ONLY_LWIP_SELECT is not set
+CONFIG_ESP_GRATUITOUS_ARP=y
+CONFIG_GARP_TMR_INTERVAL=60
+CONFIG_TCPIP_RECVMBOX_SIZE=32
+CONFIG_TCP_MAXRTX=12
+CONFIG_TCP_SYNMAXRTX=12
+CONFIG_TCP_MSS=1440
+CONFIG_TCP_MSL=60000
+CONFIG_TCP_SND_BUF_DEFAULT=5744
+CONFIG_TCP_WND_DEFAULT=5744
+CONFIG_TCP_RECVMBOX_SIZE=6
+CONFIG_TCP_QUEUE_OOSEQ=y
+# CONFIG_ESP_TCP_KEEP_CONNECTION_WHEN_IP_CHANGES is not set
+CONFIG_TCP_OVERSIZE_MSS=y
+# CONFIG_TCP_OVERSIZE_QUARTER_MSS is not set
+# CONFIG_TCP_OVERSIZE_DISABLE is not set
+CONFIG_UDP_RECVMBOX_SIZE=6
+CONFIG_TCPIP_TASK_STACK_SIZE=3072
+CONFIG_TCPIP_TASK_AFFINITY_NO_AFFINITY=y
+# CONFIG_TCPIP_TASK_AFFINITY_CPU0 is not set
+# CONFIG_TCPIP_TASK_AFFINITY_CPU1 is not set
+CONFIG_TCPIP_TASK_AFFINITY=0x7FFFFFFF
+# CONFIG_PPP_SUPPORT is not set
+CONFIG_ESP32_PTHREAD_TASK_PRIO_DEFAULT=5
+CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT=3072
+CONFIG_ESP32_PTHREAD_STACK_MIN=768
+CONFIG_ESP32_DEFAULT_PTHREAD_CORE_NO_AFFINITY=y
+# CONFIG_ESP32_DEFAULT_PTHREAD_CORE_0 is not set
+# CONFIG_ESP32_DEFAULT_PTHREAD_CORE_1 is not set
+CONFIG_ESP32_PTHREAD_TASK_CORE_DEFAULT=-1
+CONFIG_ESP32_PTHREAD_TASK_NAME_DEFAULT="pthread"
+CONFIG_SPI_FLASH_WRITING_DANGEROUS_REGIONS_ABORTS=y
+# CONFIG_SPI_FLASH_WRITING_DANGEROUS_REGIONS_FAILS is not set
+# CONFIG_SPI_FLASH_WRITING_DANGEROUS_REGIONS_ALLOWED is not set
+CONFIG_SUPPRESS_SELECT_DEBUG_OUTPUT=y
+CONFIG_SUPPORT_TERMIOS=y
+CONFIG_SEMIHOSTFS_MAX_MOUNT_POINTS=1
+CONFIG_SEMIHOSTFS_HOST_PATH_MAX_LEN=128
+# End of deprecated options
