@@ -22,7 +22,7 @@ void Task1code (void * parameter) {
         vTaskDelayUntil(&xLastWakeTime, xFrequency / portTICK_PERIOD_MS);
         vTaskPrioritySet(NULL, currentPriority - 1);
         printf("Setting Priority\n\n");
-    fflush(stdout);
+        fflush(stdout);
     } while (((int)uxTaskPriorityGet(NULL)) > 1);
 
     printf("Deleting Task1\n\n");
