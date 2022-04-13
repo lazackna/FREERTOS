@@ -43,7 +43,7 @@ void Writer (void* parameters) {
     sprintf(arr, "%d", writerId);
 
     while(1) {
-        //take a mutex to check if it is the only Reader. 
+        //take a mutex to check if it is the only Writer. 
         xSemaphoreTake(mutex, portMAX_DELAY);
         activeWriter++;
 
@@ -58,7 +58,7 @@ void Writer (void* parameters) {
         printf("Writer %d is writing\n", writerId);
         fflush(stdout);
         
-        //take mutex to remove itself and writeMutex
+        //take mutex to remove itself and readMutex
         xSemaphoreTake(mutex, portMAX_DELAY);
         activeWriter--;
         if(activeWriter == 0){
