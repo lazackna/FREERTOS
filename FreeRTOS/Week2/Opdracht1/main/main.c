@@ -18,10 +18,10 @@ void Task1code (void * parameter) {
     do
     {
         int currentPriority = (int)uxTaskPriorityGet(NULL);
-        vTaskDelayUntil(&xLastWakeTime, xFrequency / portTICK_PERIOD_MS);
+        vTaskDelayUntil(&xLastWakeTime, xFrequency / portTICK_PERIOD_MS); 
 
-        time = (xLastWakeTime - lastTime) / configTICK_RATE_HZ;
-        lastTime = xLastWakeTime + xFrequency / 10;
+        time = (xLastWakeTime - lastTime) / configTICK_RATE_HZ; // Calculate the time that was spent during the delay.
+        lastTime = xLastWakeTime + xFrequency / 10; // Update lastTime and compensate for the second delay.
         printf("weer %f seconden | %i\n", time, currentPriority);
 
         vTaskDelayUntil(&xLastWakeTime, xFrequency / portTICK_PERIOD_MS);
