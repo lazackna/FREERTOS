@@ -15,7 +15,7 @@ void starvationTask (void * parameter) {
     while (1)
     {
         xSemaphoreTake(buttonMutex, portMAX_DELAY);
-        
+        printf("Task: %d\n", i);
         xSemaphoreGive(buttonMutex);
         vTaskDelay(1);
     }
@@ -24,9 +24,9 @@ void starvationTask (void * parameter) {
 void app_main(void)
 {
     buttonMutex = xSemaphoreCreateMutex();
-    for (int i = 0; i < 19; i++) {
+    for (int i = 1; i <= 19; i++) {
         TaskHandle_t TaskHandle_t;
-        xTaskCreatePinnedToCore(starvationTask,"Noise task ", 10000, (void *) i, 20, &TaskHandle_t, 0);
+        xTaskCreatePinnedToCore(starvationTask,"Noise task ", 10000, (void *) i, 2, &TaskHandle_t, 0);
     }
     
     TaskHandle_t TaskHandle_t;
