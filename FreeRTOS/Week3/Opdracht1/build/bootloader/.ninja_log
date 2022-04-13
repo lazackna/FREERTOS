@@ -1,80 +1,0 @@
-# ninja log v5
-51	689	6666200075271155	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.obj	f72f87f082428d4d
-80	1228	6666200080202462	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/adc_hal.c.obj	e352fb0d5b4eb5db
-69	1482	6666200083357609	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rmt_hal.c.obj	fb338a553e6b3203
-45	1565	6666200084361512	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.obj	4380abe48a153ab8
-58	1600	6666200084915215	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/cpu_hal.c.obj	a3f3fd80757cf814
-16	1610	6666200083337905	project_elf_src.c	5d283e4cbbcf415c
-95	1702	6666200085752120	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/dac_hal.c.obj	b2981c21868a38ea
-101	1796	6666200086537618	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rtc_io_hal.c.obj	ce71365af6d598f7
-38	1843	6666200087199375	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/cpu_util.c.obj	730bdfc11ed5c1c
-1610	2099	6666200089159760	CMakeFiles/bootloader.elf.dir/project_elf_src.c.obj	ddc73ab76ec888ae
-87	2264	6666200091203004	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.obj	fe099abcf131088b
-1291	2495	6666200093557286	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.obj	7905f90b503f1ef4
-691	2684	6666200094447707	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.obj	b64f9addaf99db56
-1797	2691	6666200095262395	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.obj	ce0fa80e52e13278
-1567	2731	6666200094571589	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/touch_sensor_hal.c.obj	50cb9405e32b80da
-1602	2887	6666200097313655	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sigmadelta_hal.c.obj	aa2bcedc3af90238
-1844	3239	6666200100955372	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/pcnt_hal.c.obj	23dea873bae9f9b6
-1483	3362	6666200101663731	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2s_hal.c.obj	4d61eec0a0099ff
-2101	3403	6666200102911796	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/timer_hal.c.obj	e7b2fb6a98858c1f
-2296	3415	6666200101683686	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal_iram.c.obj	ff20a115421adf9b
-2686	3487	6666200103554915	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal.c.obj	3f0bd9e5ddc8b6cb
-1745	3646	6666200104301501	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.obj	6522892aa03ff66
-2732	3819	6666200106819521	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/gpio_hal.c.obj	f13e7402065dee92
-2496	3866	6666200106082044	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal.c.obj	5764484d7f97a1ab
-2693	3893	6666200107443131	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal_iram.c.obj	1863a8918c6b7e42
-3241	4894	6666200117600937	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mpu_hal.c.obj	656e30d490336d45
-2889	4967	6666200116790130	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal.c.obj	aea1892672facb2a
-3488	4983	6666200118184596	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal_iram.c.obj	522ceafff598d86f
-3364	4997	6666200118527732	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/wdt_hal_iram.c.obj	32fcde706388a838
-3895	5082	6666200119433163	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/adc_hal.c.obj	b07e67f9b5a706b0
-3417	5176	6666200120525980	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.obj	f1f88adfe3e93230
-3647	5620	6666200122834944	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/soc_hal.c.obj	a6ec19d78a2d38b9
-3404	5651	6666200125225712	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.obj	35f625ea0223758c
-3867	5985	6666200128349538	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mcpwm_hal.c.obj	374bbf989c6b0cf2
-4895	6035	6666200128845591	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/brownout_hal.c.obj	adfcdf80abf62faa
-4968	6087	6666200129473782	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal.c.obj	bde55d93c6f9422a
-3820	6095	6666200129117797	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sdio_slave_hal.c.obj	ab225ca359da4bc9
-4999	6605	6666200134238561	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/compare_set.c.obj	971b28df9ee70014
-5645	6815	6666200135544251	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_pm.c.obj	6652dde4a0460aad
-5084	7019	6666200138916843	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_sleep.c.obj	3094632c4b19e52d
-5177	7028	6666200139112069	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk_init.c.obj	dc93c7268695636b
-5986	7175	6666200140537802	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_init.c.obj	2f8e861f7a63889c
-6036	7187	6666200140228616	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/soc_memory_layout.c.obj	92f2fcd647ec2401
-5653	7296	6666200141040730	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_time.c.obj	801f08b3ee635281
-4984	7306	6666200141768005	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk.c.obj	d0c66f097c48b1f
-6096	7315	6666200141936808	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/touch_sensor_hal.c.obj	b4ed1a07d5a37d4
-6088	7438	6666200142987564	esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_wdt.c.obj	30dd82b5d7c5e452
-7029	7572	6666200144143002	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.obj	c85779b5e869eee3
-6816	7582	6666200143834548	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.obj	472dc78a68bc870d
-6632	7640	6666200144535480	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.obj	9f31f211023df335
-7177	7835	6666200146285771	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.obj	5b177409d0942b85
-7020	7872	6666200147069058	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.obj	84f65783e10990a1
-7316	7984	6666200148255014	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.obj	5407c509f5a3d72
-7440	8037	6666200148987916	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.obj	b5b7c47226c0d250
-7297	8046	6666200148433229	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.obj	19fb2d0524e64652
-7574	8108	6666200149317565	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.obj	11e59920c2d459da
-7307	8115	6666200148073802	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.obj	622d5e8d4569ca94
-7188	8152	6666200148764277	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.obj	161f17d339a0534d
-7874	8452	6666200152883323	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.obj	68edbade35a633cc
-7837	8510	6666200153565711	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.obj	51ee919fbf36595b
-7642	8732	6666200155634167	esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj	4b9464f5cf0768d3
-7584	8743	6666200156279332	esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj	3e0f885e4ad99bb9
-7986	8917	6666200156868540	esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.obj	f7fd15d31cb2247c
-8109	9355	6666200161611449	esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj	ff7f1ba2e90c0317
-8511	9714	6666200165562273	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32/esp_efuse_table.c.obj	67772f4382939ca7
-8153	9762	6666200166518375	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj	2fe0ba3c3457c723
-8116	9870	6666200166918418	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj	a3141c5d152ad47b
-8047	9956	6666200167659452	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp32/spi_flash_rom_patch.c.obj	14600246aa144398
-8744	10137	6666200169925696	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_api.c.obj	e9be0e5dc6a44a10
-8454	10163	6666200170043087	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj	c641514771b9272e
-8734	10559	6666200174369403	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_fields.c.obj	5feafaa4b3b2733
-8920	10813	6666200176401445	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_utility.c.obj	bb594af7c92c4904
-9356	11014	6666200176666312	esp-idf/log/liblog.a	896a31637c782c4e
-9871	11023	6666200178597553	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj	d0c1cec0f1e3c633
-10138	11033	6666200178875677	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj	52dfb2541b56d32
-8038	11287	6666200181792468	esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj	47280d4324ad2b14
-9764	11380	6666200182378693	esp-idfo2Øcø¶–L9üo◊?¡ﬂl,`Pik,g˙(˜/ê¢.∆^ âóáÍz|WÌ@∑"ÄôÖ˘úÄ[º@ç˘≈Ò$lfÉ¬yºˇ#Óµπ¡ÏLz)çFã~∆kO~˚æ"æï!n8Ia)}Ë◊67≠?ë%bb^n¬5üüÚ_†Æˆ™ˇ';›Ÿÿ<∂v·aò‹ï„á0˛lÍDò› –(	L¬“9‰¢∂2ZLÊ	BûıT®}ÎEõH™Öhâ qè3æÂIH¡8„ﬂ£:”π›öÖ[?ãiód∆¡ﬁÛ
-ZJ Y°ç%Ïù\å›∆uæîödZG‰˛4ΩﬁN„«k6ÚwC„;ökÔ@wøÖL]i§™§BRVŒ 3√◊@(Ø:ô\õïS«Âÿ≤5öZh∆Ö¨RÑØ¸i;ülò∆À›±ËÿE˝ËÌÌÓ˚›wÑ/2i∞'öq&∂´ÀÌå´è˚úv(°›]gí˛}ØŒµ˛U)˛’◊⁄GÆq«ó=x∑›1Í¬PH‘Ø–ú16ﬂN˚Öë¬Ÿ/REÈQ¡‡⁄Ë¿ÔzPÌáˇ ªN•¯¨#+˜g)ÑtZ°	6+gz,áÓ≤€M„wœv®s¯Í-ﬂ`ìP”Ü%s^Ò–EÕ˘z@3O]   †èË∆ˇ“¬‘x·g„{I-ùo
-ËÉJ¶m-@’%aÊ+[œ–Ωêg¸∫ˆúw}˙fùùçœË¯Ï∫©BÖ`∏°QbµÑZ)øî˙®.˝XT+"€l5à≥cwÿ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
