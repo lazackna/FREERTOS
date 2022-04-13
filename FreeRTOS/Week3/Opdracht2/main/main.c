@@ -8,50 +8,62 @@
 #include "freertos/semphr.h"
 
 SemaphoreHandle_t mutex;
-SemaphoreHandle_t writeMutex;
+SemaphoreHandle_t readMutex;
 char* string = "h";
 
-int currentProducer = 0;
-int currentConsumer = 0;
+int currentReader = 0;
+int currentWriter = 0;
 
-volatile int activeReaders = 0;
+volatile int activeWriter = 0;
 
-void Writer (void* parameters) {
-    int myNumber = currentProducer;
-    currentProducer++;
-    char arr[12];
-    sprintf(arr, "%d", myNumber);
+void Reader (void* parameters) {
+    int writerId = currentWriter;
+    currentWriter++;
+
     while(1) {
-        xSemaphoreTake(writeMutex, portMAX_DELAY);
+        //take readMutex and write it's id to the string
+        xSemaphoreTake(readMutex, portMAX_DELAY);
 
-        string = arr;
-        printf("Writer %d is writing\n", myNumber);
+        //read the string
+        printf("Reader %d is reading: %s\n", readerId, string);
         fflush(stdout);
-        xSemaphoreGive(writeMutex);
+
+        //give the readMutex
+        xSemaphoreGive(readMutex);
         vTaskDelay(200);
     }
     vTaskDelete(NULL);
 }
 
-void Reader (void* parameters) {
-    int myNumber = currentConsumer;
-    currentConsumer++;
+void Writer (void* parameters) {
+    int readerId = currentReader;
+    currentReader++;
+
+    char arr[12];
+    sprintf(arr, "%d", writerId);
+
     while(1) {
+        //take a mutex to check if it is the only Reader. 
         xSemaphoreTake(mutex, portMAX_DELAY);
-        activeReaders++;
+        activeWriter++;
 
-        if (activeReaders == 0)
-        xSemaphoreTake(writeMutex, portMAX_DELAY);
-
+        //If so it will take readMutex to stop writers from changing the string. 
+        if (activeWriter == 1){
+            xSemaphoreTake(readMutex, portMAX_DELAY);
+        }
         xSemaphoreGive(mutex);
 
-        printf("Reader %d is reading: %s\n", myNumber, string);
+        //write the string
+        string = arr;
+        printf("Writer %d is writing\n", writerId);
         fflush(stdout);
         
+        //take mutex to remove itself and writeMutex
         xSemaphoreTake(mutex, portMAX_DELAY);
-        activeReaders--;
-        if(activeReaders == 0)
-        xSemaphoreGive(writeMutex);
+        activeWriter--;
+        if(activeWriter == 0){
+            xSemaphoreGive(readMutex);
+        }
         xSemaphoreGive(mutex);
         vTaskDelay(200);
     }
@@ -61,15 +73,14 @@ void Reader (void* parameters) {
 void app_main(void)
 {
     mutex = xSemaphoreCreateMutex();
-    writeMutex = xSemaphoreCreateMutex();
+    readMutex = xSemaphoreCreateMutex();
     for(int i = 0; i < 3; i++) {
         TaskHandle_t handle;
-        xTaskCreatePinnedToCore(Reader, "PhilosopherTask", 10000, NULL, 6, &handle, 1);
+        xTaskCreatePinnedToCore(Reader, "Reader", 10000, NULL, 6, &handle, 1);
     }
     for(int i = 0; i < 2; i++) {
         TaskHandle_t handle;
-        xTaskCreatePinnedToCore(Writer, "PhilosopherTask", 10000, NULL, 6, &handle, 1);
+        xTaskCreatePinnedToCore(Writer, "Writer", 10000, NULL, 6, &handle, 1);
     }
 
-    
 }
